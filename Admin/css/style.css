@@ -1,0 +1,815 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.AdminLanding {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: white;
+}
+
+.AdminLanding .container_content{
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .container_content{
+        width: 100vw;
+        display: flex;
+        position: absolute;
+        height: 106vh;
+        top: 60px;
+        flex-direction: column-reverse;
+    }
+}
+
+.AdminLanding .Content {
+    left: 165px;
+    top: 293px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    display: inline-flex;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .Content{
+        left: 0;
+        top: 450px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.AdminLanding .Content .HeaderCopy {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .Content .HeaderCopy{
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.AdminLanding .Content .HeaderCopy .TreeTech {
+    width: 540px
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .Content .HeaderCopy .TreeTech {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.AdminLanding .Content .HeaderCopy .TreeTech span:first-of-type {
+    color: #E9BC21;
+    font-size: 72px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 98px;
+    word-wrap: break-word;
+}
+
+.AdminLanding .Content .HeaderCopy .TreeTech span:nth-of-type(2) {
+    color: #616266;
+    font-size: 72px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 98px;
+    word-wrap: break-word;
+}
+
+.AdminLanding .Content .HeaderCopy .TreeTech span:nth-of-type(3) {
+    color: #18191F;
+    font-size: 72px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 98px;
+    word-wrap: break-word;
+}
+
+.AdminLanding .Content .HeaderCopy .TreeTech span:nth-of-type(4) {
+    color: #E9BC21;
+    font-size: 72px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 98px;
+    word-wrap: break-word;
+}
+
+.AdminLanding .Content .HeaderCopy .TreeTech span:last-of-type {
+    color: #616266;
+    font-size: 72px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 98px;
+    word-wrap: break-word;
+}
+
+.AdminLanding .Content .HeaderCopy .Tree {
+    width: 540px;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .Content .HeaderCopy .Tree {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.AdminLanding .Content .HeaderCopy .Tree span:first-of-type {
+    color: #888888;
+    font-size: 20px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+
+.AdminLanding .Content .HeaderCopy .Tree span:last-of-type {
+    color: #18191F;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 32px;
+    word-wrap: break-word
+}
+
+.AdminLanding .Content .PrimaryLarge input[type="submit"] {
+    width: 196px;
+    height: 62px;
+    padding-left: 41px;
+    padding-right: 41px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: rgb(239, 187, 0);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-color: rgb(239, 187, 0);
+    border-style: solid;
+    opacity: 0.5;
+}
+
+.AdminLanding .Content .PrimaryLarge input[type="button"]:active {
+    background-color: rgb(192, 150, 1);
+}
+
+.AdminLanding .Content .PrimaryLarge label {
+    text-align: center;
+    color: #616266;
+    font-size: 20px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.AdminLanding .MockCreative {
+    width: 524px;
+    height: 400px;
+    left: 56%;
+    top: 269px;
+    position: absolute;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .MockCreative{
+        left: -20px;
+        top: 60px;
+        width: 100%;
+    }
+}
+
+.AdminLanding .MockCreative .MobileMockup {
+    width: 400px;
+    height: 400px;
+    left: 54px;
+    top: 0px;
+    position: absolute;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .MockCreative .MobileMockup{
+        left: 0;
+        width: 100%;
+    }
+}
+
+.AdminLanding .MockCreative .MobileMockup .Mask {
+    width: 400px;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #fff;
+    border-radius: 9999px;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .MockCreative .MobileMockup .Mask{
+        width: 100%;
+    }
+}
+
+.AdminLanding .MockCreative .MobileMockup .Circle {
+    width: 400px;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: rgba(233, 188, 33, 0.25);
+    border-radius: 9999px;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .MockCreative .MobileMockup .Circle{
+        display: none;
+    }
+}
+
+.AdminLanding .MockCreative .MobileMockup .Mockup {
+    width: 250px;
+    height: 500px;
+    left: 75px;
+    top: 80px;
+    position: absolute;
+}
+
+.AdminLanding .MockCreative .MobileMockup .Mockup .Img31 {
+    width: 200px;
+    height: 244px;
+    left: 25px;
+    top: 45px;
+    position: absolute;
+    z-index: 1;
+    filter: drop-shadow(2px 2px 2px white);
+}
+
+.AdminLanding .MockCreative .MobileMockup .Mockup .MobileIphoneX .IphoneX {
+    width: 250px;
+    height: 292px;
+    border-radius: 35px;
+    position: relative;
+    top: -1px;
+    filter: drop-shadow(4px 4px 4px #000)
+}
+
+.AdminLanding .MockCreative .Card1 {
+    width: 280px;
+    height: 72px;
+    padding: 12px;
+    left: 0px;
+    top: 16px;
+    position: relative;
+    background: white;
+    box-shadow: -2px 4px 45px rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .MockCreative .Card1{
+        left: 60px;
+    }
+}
+
+.AdminLanding .MockCreative .Card1 .User3 {
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+}
+
+.AdminLanding .MockCreative .Card1 .Content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+    position: absolute;
+    top: 25px;
+    left: 75px;
+}
+
+.AdminLanding .MockCreative .Card1 .Content .Heading {
+    width: 72px;
+    height: 16px;
+    background: #F4F5F7;
+    border-radius: 100px;
+}
+
+.AdminLanding .MockCreative .Card1 .Content .Paragraph {
+    width: 196px;
+    height: 8px;
+    background: #F4F5F7;
+    border-radius: 8px;
+}
+
+.AdminLanding .MockCreative .Card2 {
+    width: 280px;
+    height: 72px;
+    padding: 12px;
+    left: 244px;
+    top: 244px;
+    position: relative;
+    background: white;
+    box-shadow: -2px 4px 45px rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .MockCreative .Card2{
+        left: 60px;
+    }
+}
+
+.AdminLanding .MockCreative .Card2 .UserImage {
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+}
+
+.AdminLanding .MockCreative .Card2 .Content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+    position: absolute;
+    top: 25px;
+    left: 75px;
+}
+
+.AdminLanding .MockCreative .Card2 .Content .Header {
+    width: 72px;
+    height: 16px;
+    background: #F4F5F7;
+    border-radius: 100px;
+}
+
+.AdminLanding .MockCreative .Card2 .Content .Paragraph {
+    width: 196px;
+    height: 8px;
+    background: #F4F5F7;
+    border-radius: 8px;
+}
+
+.AdminLanding .Navbar {
+    width: 100%;
+    height: 72px;
+}
+
+.AdminLanding .Navbar .Header5 {
+    width: 100%;
+    height: 72px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: black;
+}
+
+@media (max-width: 676px) {
+    .AdminLanding .Navbar .Header5{
+        justify-content: flex-start;
+    }
+}
+
+.back{
+    padding-top: 4px;
+}
+
+@media (max-width: 767px) {
+    .back{
+        display: none;
+    }
+}
+
+.back i{
+    margin-left: 30px;
+}
+
+.fa-solid{
+    font-size: 24px;
+    color: white;
+}
+
+.AdminLanding .Navbar .Header5 .Bg {
+    width: 1440px;
+    height: 72px;
+    background: white;
+    box-shadow: 0px 1px 0px #E5E9F2;
+}
+
+.AdminLanding .Navbar .Header5 .RightNav {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 14px;
+    display: inline-flex;
+    position: relative;
+    right: 60px;
+}
+
+@media (max-width: 400px) {
+    .AdminLanding .Navbar .Header5 .RightNav{
+        right: -7%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+    .AdminLanding .Navbar .Header5 .RightNav{
+        right: -16%;
+    }
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium {
+    width: 100px;
+    height: 40px;
+    background: rgb(112, 88, 1);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium  a{
+    color: white;
+    text-decoration: none;
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium ,
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium input[type="submit"]{
+    width: 100px;
+    height: 40px;
+    background: rgb(239, 187, 0);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    border-style: solid;
+    border-color: rgb(239, 187, 0);
+    color:white;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium ul{
+    list-style: none;
+}
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium .setting input,
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium 
+{
+    width: 100px;
+    height: 40px;
+    background: rgb(239, 187, 0);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    border-style: solid;
+    border-color: rgb(239, 187, 0);
+    color:white;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium .setting ul{
+    border-radius: 8px;
+}
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium .setting_hidden{
+    position: absolute;
+    top: 150%;
+    left: 115px;
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium .setting_hidden input{
+    margin-top: 10px;
+    background-color: rgb(112, 88, 1);
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium .setting_hidden input:active{
+    background-color: #604c05;
+    border-color: #604c05;
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium .setting input:hover
+{
+    background-color: #604c05;
+    border-color: #604c05;
+    border-radius: 8px;
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium .setting  input:active{
+    background-color: rgb(239, 187, 0);
+    border-color: rgb(239, 187, 0);
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .PrimaryMedium .SignUp {
+    text-align: center;
+    color: #fefeff;
+    font-size: 18px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.AdminLanding .LeftNavItems {
+    left: -50%;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+    display: inline-flex;
+    transform: translateX(75%);
+
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .LeftNavItems{
+        left: -30px;
+        top: 142px;
+        background-color: #000;
+        width: 100%;
+        display: none;
+    }
+}
+
+.AdminLanding .LeftNavItems .HeaderMenuDefault {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+
+.AdminLanding .LeftNavItems .HeaderMenuDefault .Label,
+.AdminLanding .LeftNavItems .MenuItemDefault .Label {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Manrope;
+    font-weight:bold;
+    line-height: 20px;
+    word-wrap: break-word;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    list-style: none;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 10px;
+}
+.AdminLanding .LeftNavItems .HeaderMenuDefault .Label{
+    position: relative;
+    left: -6px;
+}
+.AdminLanding .LeftNavItems .MenuItemDefault .Label:nth-child(3){
+    position: relative;
+    left: 12px;
+}
+
+.AdminLanding .LeftNavItems .HeaderMenuDefault a,
+.AdminLanding .LeftNavItems .MenuItemDefault a{
+    text-decoration: none;
+}
+
+.AdminLanding .LeftNavItems .HeaderMenuDefault a :hover,
+.AdminLanding .LeftNavItems .MenuItemDefault a :hover
+{
+    background-color: rgb(112, 88, 1);
+}
+
+.AdminLanding .LeftNavItems .HeaderMenuDefault a :active,
+.AdminLanding .LeftNavItems .MenuItemDefault a :active
+{
+    background-color: rgb(192, 150, 1);
+}
+
+.LeftNav{
+    display: none;
+}
+.LeftNav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+i{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .LeftNav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        left: 0;
+        top: 10px;
+        font-size: 20px;
+    }
+    .header_menu{
+        margin-bottom: 20px;
+        margin-left: 10px;
+        display: flex;
+    }
+    i{
+        color: white;
+        margin-left: 10px;
+        padding: 3px;
+        cursor: pointer;
+    }
+    i.btn_up{
+        position: absolute;
+        left: 70px;
+        display: none;
+    }
+    .slider{
+        width: 360px;
+        display: none;
+        background-color: #000;
+        z-index: 2;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    .MenuItem{
+        margin-left: 10px;
+    }
+    .MenuItem:not(:last-child){
+        margin-bottom: 22px;
+    }
+}
+
+.AdminLanding .Logo {
+    width: 156px;
+    height: 72px;
+    left: 715px;
+    top: 0px;
+    position: absolute;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .Logo{
+        display: none;
+    }
+}
+
+.AdminLanding .Logo .Img11 {
+    width: 70px;
+    height: 51px;
+    left: 35px;
+    top: 7px;
+    position: relative;
+}
+
+.AdminLanding .Logo .TreeTech {
+    width: 66px;
+    left: 90px;
+    top: 26px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Manrope;
+    font-weight:bold;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .category{
+    position: absolute;
+    list-style-type: none;
+    left: 1%;
+    top:125%;
+}
+
+@media (max-width: 767px) {
+    .AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .category{
+        z-index: 2;
+        background: #000;
+        border-radius: 8px;
+    }
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .category input{
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #ebe9e9;
+    font-size: 18px;
+    width: 212px;
+    border-color: #c2c1c1;
+    height: 40px;
+    border-style:solid;
+    border-width: 0.5px;
+    letter-spacing: 1.5px;
+    
+    
+}
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .category input[type="text"]{
+    padding: 15px;
+
+}
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .category input[type="text"]:focus{
+    background-color: white;
+    color: #495057;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .category input[type="password"]:focus{
+    background-color: white;
+    color: #495057;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25); 
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .category input[type="password"]{
+    padding: 15px;
+
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .category input[type="submit"]{
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: rgb(239, 187, 0);
+    border-color: rgb(239, 187, 0);
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .category input[type="submit"]:active{
+    background-color: rgb(151, 119, 1);
+}
+
+
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .categories{
+    list-style-type: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .categories:hover{
+    background-color: rgb(239, 187, 0);
+
+}
+
+.AdminLanding .Navbar .Header5 .RightNav .SecondaryMedium .Login ul .categories:active{
+    background-color: rgb(112, 88, 1);
+}
+
+.MediaPhone{
+    display: none;
+}
+

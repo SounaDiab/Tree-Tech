@@ -1,0 +1,173 @@
+/* body{
+    background-image: linear-gradient(15deg,#ffffff,#c4c3c3,#6b6b6b,#262626,#030303);
+} */
+
+.blurr{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+}
+
+@media (max-width: 750px) {
+    .blurr{
+        margin-top: 0;
+    }
+}
+
+
+
+.details_cardd{
+    /* border: 4px solid #080808; */
+    width: 70%;
+    box-shadow: 10px 10px 10px #020202;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: white;
+}
+
+
+.nav_cardd{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.Exit{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    margin-bottom: 20px;
+
+}
+
+.Exit:hover{
+    background-color: #a8a8a8;
+    border-radius: 5px;
+}
+
+.info{
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.body_card{
+    display: grid;
+    grid-template-rows: calc(100% / 6);
+}
+
+@media (max-width: 750px) {
+    .body_card{
+        grid-template-rows: calc(100% / 8);
+    }
+}
+
+.pi{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    margin: 10px;
+    width: 50%;
+}
+
+.name_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d6efd;
+    padding: 20px;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.info ,.name_card ,.pi{
+    font-size: 26px;
+}
+
+.result_c{
+    color: rgb(91, 91, 91);
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 12px;
+    background-color: rgb(215, 240, 240);
+    border-radius: 7px;
+}
+
+.N{
+    background-color: #545353;
+    color: white;
+    border-radius: 7px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    display: none;
+    margin: 2%;
+    width: 96%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 750px) {
+    .image{
+        display: block;
+    }
+}
+
+.picture{
+    width: 25%;
+    height: 250px;
+    padding: 2%;
+    position: absolute;
+    top: 36%;
+    left: 53%;
+    z-index: 1;
+}
+
+.picture img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 750px) {
+    .picture{
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .blurr{
+        flex-direction: column-reverse;
+    }
+    .details_cardd{
+        width: 100%;
+        box-shadow: none;
+    }
+    .pi{
+        width: calc(100% - 20px);
+    }
+    .name_card{
+        margin-left: 10px;
+        width: calc(100% - 60px);
+    }
+    .picture{
+        width: 100%;
+        height: 50%;
+        box-shadow: none;
+        margin-bottom: 20px;
+        padding: 2px 2px 0;
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+}
